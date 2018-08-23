@@ -1,0 +1,89 @@
+.background {
+    background-color: #3D405B;
+    margin: 0;
+}
+
+.header {
+    background-color: #E07A5F;
+    margin: 15px;
+    padding: 10px;
+    padding-bottom: 3px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+}
+
+.menu {
+    background-color: #81B29A;
+    margin: 3px;
+    padding: 5px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+}
+.menu-item {
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 15px;
+}
+
+.content {
+    background-color: #CAEFCF;
+    margin: 15px;
+    padding: 27px;
+}
+
+.footer {
+    background-color: #E07A5F;
+    margin: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    color: #3D405B;
+    text-decoration: none;
+}
+a:visited {
+    color: #3D405B;
+    text-decoration: none;
+}
+a:hover {
+    color: #CAEFCF;
+}
+h1 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 30px;
+    padding-left: 20px;
+    text-align:  left;
+    color: beige;
+}
+
+h2 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 20px;
+}
+h3 {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+}
+p.article::first-letter {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: #3D405B;
+}
+.caption {
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.strong-text {
+    font-weight: bold;
+}
+table {
+    width: 75%;
+}
+th {
+    text-align: left;
+}
