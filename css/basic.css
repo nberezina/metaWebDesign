@@ -2,6 +2,7 @@
 .appllication {
     background-color: #3D405B;
     margin: 0;
+    font-family: "Merriweather", serif
 }
 a {
     color: #3D405B;
@@ -12,8 +13,9 @@ a:visited {
     text-decoration: none;
 }
 a:hover {
-    color: #CAEFCF;
+    color: #E07A5F;
 }
+
 
 /*header*/
 .application__header {
@@ -21,11 +23,10 @@ a:hover {
     margin: 15px;
     padding: 10px;
     padding-bottom: 3px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 30px;
+    font-family: "Oswald", serif;
+    font-size: 40px;
 }
 .application__header__heading {
-    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 30px;
     padding-left: 20px;
     text-align:  left;
@@ -35,11 +36,9 @@ a:hover {
     background-color: #81B29A;
     margin: 3px;
     padding: 5px;
-    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 20px;
 }
 .application__header__menu__menu-item {
-    font-family: "Arial Black", Gadget, sans-serif;
     padding: 15px;
 }
 
@@ -50,15 +49,12 @@ a:hover {
     padding: 27px;
 }
 .application__main__content__heading2 {
-    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 20px;
 }
 .application__main__content__article::first-letter {
-    font-family: "Arial Black", Gadget, sans-serif;
     color: #3D405B;
 }
 .application__main__content__caption {
-    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 15px;
     font-weight: bolder;
 }
@@ -73,7 +69,6 @@ a:hover {
     font-weight: bold;
 }
 h3 {
-    font-family: "Arial Black", Gadget, sans-serif;
     font-size: 15px;
 }
 /* footer*/
@@ -86,4 +81,37 @@ h3 {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+/*cards*/
+
+.card {
+    background-color: #CAEFCF;
+    margin: 15px;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 500px;
+}
+
+.card-header {
+    background-color: #81B29A;
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    color: #3D405B;
+    font-family: "Oswald", serif;
+}
+
+.card-content {
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.card-action {
+    text-align: right;
+    font-family: "Oswald", serif;
+    font-size: 15px;
+    padding: 5px;
 }
