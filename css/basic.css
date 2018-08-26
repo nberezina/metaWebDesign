@@ -1,42 +1,72 @@
 /* global settings */
+:root {
+    --main-bg-color: #c0ccd1;
+    --main-link-color: #eceeee;
+    --main-visited-link-color: #143755;
+    --main-hover-link-color: #9F8A91;
+    --header-background-color: #823D36;
+    --header-text-color: #E5E6E6;
+    --main-menu-bg-color: #6F4F5A;
+    --main-content-bg-color: #eceeee;
+    --footer-background-color: #823D36;
+    --card-hover-link-color: #600e1d;
+    --card-link-color: #6F4F5A
+}
+
 .appllication {
-    background-color: #3D405B;
+    background-color: var(--main-hover-link-color);
     margin: 0;
-    font-family: "Merriweather", serif
+    font-family: "Merriweather", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 a {
-    color: #3D405B;
+    color: var(--main-link-color);
     text-decoration: none;
 }
 a:visited {
-    color: #3D405B;
+    color: var(--main-link-color);
     text-decoration: none;
 }
 a:hover {
-    color: #E07A5F;
+    color: var(--main-hover-link-color);
 }
 
-
+img {
+    max-width:100%;
+}
 /*header*/
 .application__header {
-    background-color: #E07A5F;
+    background-color: var(--header-background-color);
     margin: 15px;
     padding: 10px;
     padding-bottom: 3px;
     font-family: "Oswald", serif;
     font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 3px;
+
 }
 .application__header__heading {
     font-size: 30px;
     padding-left: 20px;
     text-align:  left;
-    color: beige;
+    color: var(--header-text-color);
+
 }
 .application__header__menu {
-    background-color: #81B29A;
+    background-color: var(--main-menu-bg-color);
     margin: 3px;
     padding: 5px;
     font-size: 20px;
+    display: flex;
+    justify-content: start;
+    border-radius: 2px;
 }
 .application__header__menu__menu-item {
     padding: 15px;
@@ -44,16 +74,14 @@ a:hover {
 
 /*main*/
 .application__main__content {
-    background-color: #CAEFCF;
+    background-color: var(--main-content-bg-color);
     margin: 15px;
     padding: 27px;
 }
 .application__main__content__heading2 {
     font-size: 20px;
 }
-.application__main__content__article::first-letter {
-    color: #3D405B;
-}
+
 .application__main__content__caption {
     font-size: 15px;
     font-weight: bolder;
@@ -73,33 +101,43 @@ h3 {
 }
 /* footer*/
 .application__footer {
-    background-color: #E07A5F;
+    background-color: var(--footer-background-color);
     margin: 15px;
     padding: 5px;
     padding-left: 15px;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    border-radius: 2px;
 }
 
 /*cards*/
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 .card {
-    background-color: #CAEFCF;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-content-bg-color);
+    justify-content: space-between;
+    border-radius: 10px;
     margin: 15px;
     padding: 10px;
     max-width: 400px;
-    max-height: 500px;
+    /*max-height: 500px;*/
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3)
 }
 
 .card-header {
-    background-color: #81B29A;
+    background-color: var(--main-menu-bg-color);
+    position: relative;
     margin: 0;
     padding: 15px;
     font-size: 20px;
-    color: #3D405B;
+    color: var(--main-link-color);
     font-family: "Oswald", serif;
+    border-radius: 2px;
 }
 
 .card-content {
@@ -114,4 +152,18 @@ h3 {
     font-family: "Oswald", serif;
     font-size: 15px;
     padding: 5px;
+    position: relative;
+    bottom: 0;
+}
+
+a.card-action-link:hover {
+    color: var(--card-hover-link-color)
+}
+
+a.card-action-link {
+    color: var(--card-link-color)
+}
+
+.card-image {
+    position: relative;
 }
