@@ -1,8 +1,10 @@
+/*task 1*/
 let sayHello = function (name, surname) {
     let helloStr = "Hello, " + name + " " + surname
     console.log(helloStr)
 }
 
+/*task 2*/
 let maxArrVal = function (arr) {
     // check if we got array
     if (Array.isArray(arr)) {
@@ -20,6 +22,7 @@ let maxArrVal = function (arr) {
     }
 }
 
+/*task 3*/
 let defineAge = function (userObj) {
     // check if object has all values defined
     if (userObj.name == undefined) {
@@ -67,5 +70,48 @@ let defineAge = function (userObj) {
     let toast = toast1 + gender_transformed + userObj.name + toast2
     console.log(toast)
     return toast
+
+}
+/*task 4*/
+let square_equation = function (a, b, c) {
+    if (isNaN(a)) {
+        console.log("a is not a number")
+        return
+    }
+    if (isNaN(b)) {
+        console.log("b is not a number")
+        return
+    }
+    if (isNaN(c)) {
+        console.log("c is not a number")
+        return
+    }
+    return function (x) {
+        if (isNaN(x)) {
+            console.log("x is not a number")
+            return
+        }
+        let res= a*x^2+b*x+c
+        return res
+    }
+}
+
+/*task 5*/
+let age_checker = function (obj) {
+    if (obj.age) {
+        if (!isNaN(obj.age)) {
+            if (obj.age > 18 && obj.age < 65) {
+                return true
+            } else {
+                return false
+            }
+        } else {
+            console.log("ERR: age property is not numerical")
+            return "ERROR"
+        }
+    } else {
+        console.log("ERR: age property is not defined")
+        return "ERROR"
+    }
 
 }
